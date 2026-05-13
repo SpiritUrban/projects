@@ -285,6 +285,48 @@
       cursor: pointer;
     }
 
+    .info-card {
+      width: min(360px, 28vw);
+      padding: 24px 22px;
+      display: grid;
+      gap: 12px;
+      background: rgba(14, 18, 18, .82);
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 34px rgba(0,0,0,.44);
+      backdrop-filter: blur(14px);
+      color: rgba(232,225,213,.88);
+    }
+
+    .info-card .info-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(217,154,61,.1);
+      border-radius: 999px;
+    }
+
+    .info-card h3 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .info-card p {
+      margin: 0;
+      color: rgba(232,225,213,.7);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
     .laptop {
       width: 100%;
       height: auto;
@@ -529,16 +571,16 @@
     </main>
 
     <section class="sections" id="projects">
-      <div class="section-head">
-        <h2>Наступні<br />артефакти</h2>
-        <p>Нижче можна показувати від одного до трьох проектів на екран. Та сама мова дизайну, але композиція стає спокійнішою і дає проектам більше повітря.</p>
-      </div>
-
       <div class="project-row">
         <a class="project" id="project-nivora" href="#">
           <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>ONE PROJECT</h3><p>Великий акцент на один головний проект або флагманську систему.</p><span class="more">Переглянути →</span></div>
         </a>
+        <div class="info-card">
+          <span class="info-tag">Інсайт</span>
+          <h3>Методика та фокус</h3>
+          <p>Короткий щільний блок з ключовими фактами: проблема, підхід, результат. Повторюваний формат для кожної серії.</p>
+        </div>
         <a class="project" id="project-deepviz" href="#">
           <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>PROJECT TWO</h3><p>Другий проект у спокійнішій горизонтальній сцені.</p><span class="more">Переглянути →</span></div>
@@ -554,6 +596,11 @@
           <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>MODULE A</h3><p>Малий проект або експеримент.</p><span class="more">Переглянути →</span></div>
         </a>
+        <div class="info-card">
+          <span class="info-tag">Дані</span>
+          <h3>Що саме тут важливо</h3>
+          <p>Інформативний модуль із стислим поясненням: ціль, формат, ключовий ефект для продукту.</p>
+        </div>
         <a class="project" href="#">
           <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>MODULE B</h3><p>Ще один проект у тій самій атмосфері.</p><span class="more">Переглянути →</span></div>
