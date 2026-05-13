@@ -284,69 +284,12 @@
     }
 
     .laptop {
-      position: relative;
       width: 100%;
-      aspect-ratio: 1.65;
-    }
-
-    .screen {
-      position: absolute;
-      left: 5%;
-      right: 5%;
-      top: 0;
-      height: 70%;
-      border-radius: 10px 10px 4px 4px;
-      background:
-        radial-gradient(circle at 75% 45%, rgba(70, 190, 210, .3), transparent 28%),
-        radial-gradient(circle at 30% 60%, rgba(217,154,61,.26), transparent 26%),
-        linear-gradient(135deg, #07090b, #161b1d 55%, #040506);
-      border: 2px solid rgba(255,255,255,.13);
-      box-shadow: inset 0 0 0 2px rgba(0,0,0,.72), 0 0 22px rgba(79,183,199,.08);
-      overflow: hidden;
-    }
-
-    .screen::before {
-      content: "IMAGE / PROJECT PREVIEW";
-      position: absolute;
-      inset: 14px;
-      border: 1px dashed rgba(255,255,255,.16);
-      display: grid;
-      place-items: center;
-      color: rgba(232,225,213,.22);
-      font-size: 10px;
-      letter-spacing: .16em;
-      text-align: center;
-    }
-
-    .screen::after {
-      content: "";
-      position: absolute;
-      inset: -20%;
-      background: linear-gradient(115deg, transparent 15%, rgba(255,255,255,.07), transparent 42%);
-      transform: translateX(-40%);
-    }
-
-    .keyboard {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 11%;
-      height: 27%;
-      background: linear-gradient(180deg, #23201d, #11100f 70%, #070707);
-      clip-path: polygon(8% 0, 92% 0, 100% 72%, 88% 100%, 12% 100%, 0 72%);
-      border-radius: 5px 5px 16px 16px;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.13), inset 0 -16px 26px rgba(0,0,0,.6);
-    }
-
-    .keyboard::before {
-      content: "";
-      position: absolute;
-      left: 16%;
-      right: 16%;
-      top: 19%;
-      height: 33%;
-      background-image: repeating-linear-gradient(90deg, rgba(255,255,255,.11) 0 8px, transparent 8px 14px);
-      opacity: .25;
+      height: auto;
+      display: block;
+      transform: scale(1.3);
+      transform-origin: top center;
+      margin-bottom: 20px;
     }
 
     .plate {
@@ -461,7 +404,7 @@
       left: auto;
       top: auto;
       transform: none;
-      width: min(380px, 30vw);
+      width: min(500px, 40vw);
     }
 
     .project-row .project:hover {
@@ -586,30 +529,30 @@
 
       <div class="project-row">
         <a class="project" id="project-nivora" href="#">
-          <div class="laptop"><div class="screen"></div><div class="keyboard"></div></div>
+          <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>ONE PROJECT</h3><p>Великий акцент на один головний проект або флагманську систему.</p><span class="more">Переглянути →</span></div>
         </a>
         <a class="project" id="project-deepviz" href="#">
-          <div class="laptop"><div class="screen"></div><div class="keyboard"></div></div>
+          <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>PROJECT TWO</h3><p>Другий проект у спокійнішій горизонтальній сцені.</p><span class="more">Переглянути →</span></div>
         </a>
         <a class="project" id="project-codeboard" href="#">
-          <div class="laptop"><div class="screen"></div><div class="keyboard"></div></div>
+          <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>PROJECT THREE</h3><p>Третій проект з власним прев’ю і коротким описом.</p><span class="more">Переглянути →</span></div>
         </a>
       </div>
 
       <div class="project-row">
         <a class="project" href="#">
-          <div class="laptop"><div class="screen"></div><div class="keyboard"></div></div>
+          <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>MODULE A</h3><p>Малий проект або експеримент.</p><span class="more">Переглянути →</span></div>
         </a>
         <a class="project" href="#">
-          <div class="laptop"><div class="screen"></div><div class="keyboard"></div></div>
+          <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>MODULE B</h3><p>Ще один проект у тій самій атмосфері.</p><span class="more">Переглянути →</span></div>
         </a>
         <a class="project" href="#">
-          <div class="laptop"><div class="screen"></div><div class="keyboard"></div></div>
+          <img src="img/laptop.png" alt="Laptop" class="laptop">
           <div class="plate"><h3>MODULE C</h3><p>Третій елемент для щільнішої композиції.</p><span class="more">Переглянути →</span></div>
         </a>
       </div>
