@@ -1,4 +1,5 @@
 import './styles.css'
+import ProjectItem from './ProjectItem'
 
 function App() {
   return (
@@ -37,18 +38,9 @@ function App() {
 
       <section className="sections" id="projects">
         <div className="project-row">
-          <a className="project" id="project-nivora" href="#">
-            <img src="/img/laptop.png" alt="Laptop" className="laptop" />
-            <div className="plate"><h3>ONE PROJECT</h3><p>Великий акцент на один головний проект або флагманську систему.</p><span className="more">Переглянути →</span></div>
-          </a>
-          <a className="project" id="project-deepviz" href="#">
-            <img src="/img/laptop.png" alt="Laptop" className="laptop" />
-            <div className="plate"><h3>PROJECT TWO</h3><p>Другий проект у спокійнішій горизонтальній сцені.</p><span className="more">Переглянути →</span></div>
-          </a>
-          <a className="project" id="project-codeboard" href="#">
-            <img src="/img/laptop.png" alt="Laptop" className="laptop" />
-            <div className="plate"><h3>PROJECT THREE</h3><p>Третій проект з власним прев’ю і коротким описом.</p><span className="more">Переглянути →</span></div>
-          </a>
+          <ProjectItem id="project-nivora" title="ONE PROJECT" description="Великий акцент на один головний проект або флагманську систему." />
+          <ProjectItem id="project-deepviz" title="PROJECT TWO" description="Другий проект у спокійнішій горизонтальній сцені." />
+          <ProjectItem id="project-codeboard" title="PROJECT THREE" description="Третій проект з власним прев'ю і коротким описом." />
         </div>
 
         <div className="info-card">
@@ -58,18 +50,9 @@ function App() {
         </div>
 
         <div className="project-row">
-          <a className="project" href="#">
-            <img src="/img/laptop.png" alt="Laptop" className="laptop" />
-            <div className="plate"><h3>MODULE A</h3><p>Малий проект або експеримент.</p><span className="more">Переглянути →</span></div>
-          </a>
-          <a className="project" href="#">
-            <img src="/img/laptop.png" alt="Laptop" className="laptop" />
-            <div className="plate"><h3>MODULE B</h3><p>Ще один проект у тій самій атмосфері.</p><span className="more">Переглянути →</span></div>
-          </a>
-          <a className="project" href="#">
-            <img src="/img/laptop.png" alt="Laptop" className="laptop" />
-            <div className="plate"><h3>MODULE C</h3><p>Третій елемент для щільнішої композиції.</p><span className="more">Переглянути →</span></div>
-          </a>
+          <ProjectItem title="MODULE A" description="Малий проект або експеримент." />
+          <ProjectItem title="MODULE B" description="Ще один проект у тій самій атмосфері." />
+          <ProjectItem title="MODULE C" description="Третій елемент для щільнішої композиції." />
         </div>
 
         <div className="info-card">
