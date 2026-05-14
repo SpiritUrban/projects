@@ -1,6 +1,6 @@
 import type { JSX } from 'react'
 
-interface ProjectItemProps {
+export interface ProjectItemProps {
   title: string
   description: string
   id?: string
