@@ -330,6 +330,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+.project--position-1 .laptop,
+.project--position-3 .laptop {
+  transform: scale(1.42);
+}
+
 .plate {
   width: 88%;
   min-height: 108px;
@@ -433,22 +438,33 @@ h1 {
 }
 
 .project-row {
+  --project-gap: clamp(12px, 1.6vw, 28px);
   min-height: 520px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
-  gap: clamp(24px, 4vw, 68px);
+  gap: var(--project-gap);
   padding: 40px 0 90px;
 }
 
 .project-row .project {
+  --project-offset-y: 0px;
   position: relative;
   left: auto;
   top: auto;
-  transform: none;
-  width: min(340px, 22vw);
-  flex: 0 0 auto;
+  transform: translateY(var(--project-offset-y));
+  width: min(430px, calc((100% - var(--project-gap) - var(--project-gap)) / 3));
+  flex: 0 1 min(430px, calc((100% - var(--project-gap) - var(--project-gap)) / 3));
+}
+
+.project-row .project--position-1,
+.project-row .project--position-3 {
+  --project-offset-y: 18px;
+}
+
+.project-row .project--position-2 {
+  --project-offset-y: -14px;
 }
 
 .info-card {
@@ -465,7 +481,7 @@ h1 {
 }
 
 .project-row .project:hover {
-  transform: translateY(-14px) scale(1.035);
+  transform: translateY(calc(var(--project-offset-y) - 14px)) scale(1.035);
 }
 
 .footer {
@@ -534,10 +550,12 @@ h1 {
 
   .project-row {
     flex-direction: column;
+    flex-wrap: wrap;
     min-height: auto;
   }
 
   .project-row .project {
+    --project-offset-y: 0px;
     width: 100%;
     max-width: 390px;
   }

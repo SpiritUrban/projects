@@ -7,16 +7,16 @@ function ProjectsSection(): JSX.Element {
   return (
     <section className="sections" id="projects">
       <div className="project-row">
-        {featuredProjects.map((project) => (
-          <ProjectItem key={project.title} {...project} />
+        {featuredProjects.map((project, index) => (
+          <ProjectItem key={project.title} {...project} position={(index + 1) as 1 | 2 | 3} />
         ))}
       </div>
 
       <InfoCard {...infoCards[0]} />
 
       <div className="project-row">
-        {moduleProjects.map((project) => (
-          <ProjectItem key={project.title} {...project} />
+        {moduleProjects.map((project, index) => (
+          <ProjectItem key={project.title} {...project} position={(index + 1) as 1 | 2 | 3} />
         ))}
       </div>
 
