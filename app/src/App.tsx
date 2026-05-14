@@ -1,5 +1,6 @@
 import type { JSX } from 'react'
 import './styles.css'
+import InfoCard from './InfoCard'
 import ProjectItem from './ProjectItem'
 
 function App(): JSX.Element {
@@ -44,11 +45,11 @@ function App(): JSX.Element {
           <ProjectItem id="project-codeboard" title="PROJECT THREE" description="Третій проєкт з власним прев'ю і коротким описом." />
         </div>
 
-        <div className="info-card">
-          <span className="info-tag">Інсайт</span>
-          <h3>Методика та фокус</h3>
-          <p>Короткий щільний блок з ключовими фактами: проблема, підхід, результат. Повторюваний формат для кожної серії.</p>
-        </div>
+        <InfoCard
+          tag="Інсайт"
+          title="Методика та фокус"
+          description="Короткий щільний блок з ключовими фактами: проблема, підхід, результат. Повторюваний формат для кожної серії."
+        />
 
         <div className="project-row">
           <ProjectItem title="MODULE A" description="Малий проєкт або експеримент." />
@@ -56,11 +57,11 @@ function App(): JSX.Element {
           <ProjectItem title="MODULE C" description="Третій елемент для щільнішої композиції." />
         </div>
 
-        <div className="info-card">
-          <span className="info-tag">Дані</span>
-          <h3>Що саме тут важливо</h3>
-          <p>Інформативний модуль із стислим поясненням: ціль, формат, ключовий ефект для продукту.</p>
-        </div>
+        <InfoCard
+          tag="Дані"
+          title="Що саме тут важливо"
+          description="Інформативний модуль із стислим поясненням: ціль, формат, ключовий ефект для продукту."
+        />
       </section>
 
       <footer className="footer" id="contacts">
