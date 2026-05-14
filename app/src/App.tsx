@@ -1,7 +1,7 @@
 import './styles.css'
 import ProjectItem from './ProjectItem'
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className="site">
       <div className="bg-image-placeholder"></div>

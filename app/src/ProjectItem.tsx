@@ -1,4 +1,11 @@
-function ProjectItem({ title, description, id, href = '#' }) {
+interface ProjectItemProps {
+  title: string
+  description: string
+  id?: string
+  href?: string
+}
+
+function ProjectItem({ title, description, id, href = '#' }: ProjectItemProps): JSX.Element {
   return (
     <a className="project" id={id} href={href}>
       <img src="/img/laptop.png" alt="Laptop" className="laptop" />
