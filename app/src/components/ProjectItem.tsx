@@ -21,7 +21,7 @@ function ProjectItem({
   id,
   href = '#',
   position = 1,
-  previewImage = '/img/bg-1.png',
+  previewImage = '/img/example.png',
 }: ProjectItemProps): JSX.Element {
   return (
     <a className={`project project--position-${position}`} id={id} href={href}>
