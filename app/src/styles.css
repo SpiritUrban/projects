@@ -341,7 +341,7 @@ h1 {
   top: 12%;
   left: 23%;
   overflow: hidden;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1px;

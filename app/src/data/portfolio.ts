@@ -56,8 +56,19 @@ export const featuredProjects: PortfolioProject[] = [
   },
   {
     id: 'project-codeboard',
-    title: 'PROJECT THREE',
-    description: "Третій проєкт з власним прев'ю і коротким описом.",
+    title: 'JS BEGINNERS 2026',
+    description: 'Практичний курс JavaScript з нуля до перших інтерактивних веб-проєктів.',
+    href: 'https://spiriturban.github.io/javascript-beginners-2026/#/',
+    previewImage: '/img/products/js-beginners-2026.png',
+    details: {
+      tagline: 'JavaScript для першого впевненого старту.',
+      overview: 'JS BEGINNERS 2026 — це практичний курс для новачків без досвіду програмування. Він веде від першого console.log() до DOM, подій, інтерактивних сторінок і фінального проєкту.',
+      points: [
+        'Пояснює JavaScript поступово: від базового синтаксису до роботи зі сторінкою.',
+        'Дає практику з DOM, подіями та невеликими інтерактивними інтерфейсами.',
+        'Готує базу, після якої можна впевненіше рухатися далі в React або Node.js.',
+      ],
+    },
   },
 ]
 
