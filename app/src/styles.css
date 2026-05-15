@@ -383,6 +383,31 @@ h1 {
   width: 100%;
   height: auto;
   display: block;
+  filter: var(--laptop-tone, none);
+}
+
+.project--tone-1 .laptop {
+  --laptop-tone: hue-rotate(336deg) saturate(0.58) brightness(.87) contrast(1.0);
+}
+
+.project--tone-2 .laptop {
+  --laptop-tone: hue-rotate(4deg) saturate(.96) brightness(1.03) contrast(1.01);
+}
+
+.project--tone-3 .laptop {
+  --laptop-tone: hue-rotate(166deg) saturate(0.04) brightness(0.89) contrast(1.02);
+}
+
+.project--tone-4 .laptop {
+  --laptop-tone: hue-rotate(-15deg) saturate(.68) brightness(1.04) contrast(1.03);
+}
+
+.project--tone-5 .laptop {
+  --laptop-tone: hue-rotate(19deg) saturate(0.47) brightness(.86) contrast(1.01);
+}
+
+.project--tone-6 .laptop {
+  --laptop-tone: hue-rotate(-3deg) saturate(.73) brightness(1.02) contrast(1.08);
 }
 
 .plate {

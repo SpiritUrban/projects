@@ -6,6 +6,7 @@ export interface ProjectItemProps {
   id?: string
   href?: string
   position?: 1 | 2 | 3
+  tone?: 1 | 2 | 3 | 4 | 5 | 6
   previewImage?: string
 }
 
@@ -21,10 +22,11 @@ function ProjectItem({
   id,
   href = '#',
   position = 1,
+  tone = 1,
   previewImage = '/img/example.png',
 }: ProjectItemProps): JSX.Element {
   return (
-    <a className={`project project--position-${position}`} id={id} href={href}>
+    <a className={`project project--position-${position} project--tone-${tone}`} id={id} href={href}>
       <div className="laptop-frame">
         <img src={laptopImages[position]} alt="Laptop" className="laptop" />
         <div className="laptop-screen" style={{ backgroundImage: `url(${previewImage})` }} aria-hidden="true" />
