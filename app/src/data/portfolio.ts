@@ -74,8 +74,19 @@ export const featuredProjects: PortfolioProject[] = [
 
 export const moduleProjects: PortfolioProject[] = [
   {
-    title: 'MODULE A',
-    description: 'Малий проєкт або експеримент.',
+    title: 'NodeX DSL',
+    description: 'JSON-first UI builder для швидкого прототипування інтерфейсів із детермінованим React/MUI export.',
+    href: 'https://spiriturban.github.io/nodex-dsl/#/editor',
+    previewImage: '/img/products/nodex-dsl.png',
+    details: {
+      tagline: 'JSON-first UI builder для devs і AI.',
+      overview: 'NodeX DSL — це редактор структури інтерфейсу з єдиним DSL-контрактом. Він показує дерево, властивості вузлів і live preview, а на виході дає чистий React/MUI код без непередбачуваних полів і ручного drag-and-drop хаосу.',
+      points: [
+        'Один readable JSON є джерелом правди для структури інтерфейсу.',
+        'Жорсткий DSL-контракт прибирає розбіжності між описом, JSON і кодом.',
+        'Експортує детермінований JSX, який легше валідовати, тестувати і генерувати через AI.',
+      ],
+    },
   },
   {
     title: 'MODULE B',
