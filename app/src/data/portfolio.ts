@@ -25,16 +25,16 @@ export const featuredProjects: PortfolioProject[] = [
   {
     id: 'project-nivora',
     title: 'KEYWAVE',
-    description: 'Visual time composition for the web. JSON-driven editor and player for SVG motion scenes.',
+    description: 'Редактор вебанімацій, де сцена зберігається в JSON, а SVG використовується лише для відображення.',
     href: 'https://spiriturban.github.io/kw/',
     previewImage: '/img/products/keywave.png',
     details: {
-      tagline: 'Visual time composition for the web.',
-      overview: 'KEYWAVE — це lightweight JSON-driven редактор motion-сцен. Він дозволяє створювати, ключувати й відтворювати SVG-анімації як portable scene data без залежності від конкретної платформи.',
+      tagline: 'Візуальна композиція часу для web.',
+      overview: 'KEYWAVE — це легкий редактор motion-сцен для web. У ньому можна рухати, обертати, масштабувати й ключувати SVG-елементи, а результат зберігається як JSON-сцена, яку потім відтворює player.',
       points: [
-        'Editor і player читають одні й ті самі JSON scene data.',
-        'Підтримує move, rotate, scale, keyframes, opacity, visibility і прості morph-контроли для path assets.',
-        'Може експортувати demo HTML або повний пакет HTML + JSON + SVG + optional player.',
+        'JSON є єдиним джерелом правди: editor і player працюють з одними й тими самими scene data.',
+        'Підтримує move, rotate, scale, keyframes, opacity, visibility і базові morph-контроли для path assets.',
+        'Експортує demo HTML або повний пакет: HTML, JSON, SVG і optional player.',
       ],
     },
   },
