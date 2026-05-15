@@ -345,7 +345,7 @@ h1 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 4px;
+  border-radius: 1px;
   opacity: .92;
   filter: saturate(.9) contrast(1.08) brightness(.88);
   mix-blend-mode: screen;
@@ -355,10 +355,10 @@ h1 {
 
 .project--position-1 .laptop-screen {
   width: 53%;
-  height: 42.5%;
-  top: 15.2%;
-  left: 18%;
-  transform: perspective(716px) rotateY(25deg) rotateZ(-5.7deg) skewY(2deg) skewX(1.5deg);
+  height: 43.2%;
+  top: 14.1%;
+  left: 17.7%;
+  transform: perspective(1000px) rotateY(24deg) rotateZ(-6.7deg) skewY(2.5deg) skewX(0.5deg);
 
 }
 
