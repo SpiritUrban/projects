@@ -9,8 +9,10 @@ export const navigationItems = [
 export const featuredProjects = [
   {
     id: 'project-nivora',
-    title: 'ONE PROJECT',
-    description: 'Великий акцент на один головний проєкт або флагманську систему.',
+    title: 'KEYWAVE',
+    description: 'JSON-driven редактор motion-сцен для SVG-анімацій, де editor і player читають одні й ті самі scene data.',
+    href: 'https://spiriturban.github.io/kw/',
+    previewImage: '/img/products/keywave.png',
   },
   {
     id: 'project-deepviz',
