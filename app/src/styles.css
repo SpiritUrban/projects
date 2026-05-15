@@ -347,10 +347,13 @@ h1 {
   background-repeat: no-repeat;
   border-radius: 1px;
   opacity: .92;
-  filter: saturate(.9) contrast(1.08) brightness(.88);
+  filter: saturate(1.02) contrast(1.22) brightness(.9);
+  image-rendering: -webkit-optimize-contrast;
   mix-blend-mode: screen;
   pointer-events: none;
   transform-origin: center;
+  backface-visibility: hidden;
+  will-change: transform;
 }
 
 .project--position-1 .laptop-screen {
@@ -358,7 +361,7 @@ h1 {
   height: 43.2%;
   top: 14.1%;
   left: 17.7%;
-  transform: perspective(1000px) rotateY(24deg) rotateZ(-6.7deg) skewY(2.5deg) skewX(0.5deg);
+  transform: perspective(1000px) rotateY(24deg) rotateZ(-6.7deg) skewY(2.5deg) skewX(0.5deg) translateZ(0);
 }
 
 .project--position-2 .laptop-screen {
@@ -366,7 +369,7 @@ h1 {
   height: 42.5%;
   top: 15.2%;
   left: 23.4%;
-  transform: perspective(720px) rotateX(1deg);
+  transform: perspective(720px) rotateX(1deg) translateZ(0);
 }
 
 .project--position-3 .laptop-screen {
@@ -374,7 +377,7 @@ h1 {
   height: 39.7%;
   top: 17.7%;
   left: 29.9%;
-  transform: perspective(800px) rotateY(-24deg) rotateZ(8.7deg) skewY(-4.05deg) skewX(1.5deg);
+  transform: perspective(800px) rotateY(-24deg) rotateZ(8.7deg) skewY(-4.05deg) skewX(1.5deg) translateZ(0);
 }
 
 .laptop {
