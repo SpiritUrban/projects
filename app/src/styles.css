@@ -346,7 +346,7 @@ h1 {
   background-repeat: no-repeat;
   border-radius: 1px;
   opacity: .92;
-  filter: saturate(1.02) contrast(1.22) brightness(.9);
+  /* filter: saturate(1.02) contrast(1.22) brightness(.9); */
   image-rendering: -webkit-optimize-contrast;
   mix-blend-mode: screen;
   pointer-events: none;
