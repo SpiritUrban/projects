@@ -359,7 +359,6 @@ h1 {
   top: 14.1%;
   left: 17.7%;
   transform: perspective(1000px) rotateY(24deg) rotateZ(-6.7deg) skewY(2.5deg) skewX(0.5deg);
-
 }
 
 .project--position-2 .laptop-screen {
@@ -371,12 +370,11 @@ h1 {
 }
 
 .project--position-3 .laptop-screen {
-  width: 50%;
-  height: 31%;
-  top: 14%;
-  left: 25%;
-  transform: perspective(720px) rotateY(-18deg) rotateZ(.7deg) skewY(-1deg);
-
+  width: 48.3%;
+  height: 39.7%;
+  top: 17.7%;
+  left: 29.9%;
+  transform: perspective(800px) rotateY(-24deg) rotateZ(8.7deg) skewY(-4.05deg) skewX(1.5deg);
 }
 
 .laptop {
