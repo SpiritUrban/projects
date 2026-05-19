@@ -23,7 +23,7 @@ function ProjectItem({
   title,
   description,
   id,
-  href = '#',
+  href,
   position = 1,
   tone = 1,
   previewImage = '/img/example.png',
