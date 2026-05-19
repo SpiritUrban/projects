@@ -1,5 +1,6 @@
 import type { JSX } from 'react'
 import type { ProjectDetails } from '../data/portfolio'
+import { assetPath } from '../utils/assets'
 
 export interface ProjectItemProps {
   title: string
@@ -14,9 +15,9 @@ export interface ProjectItemProps {
 }
 
 const laptopImages: Record<NonNullable<ProjectItemProps['position']>, string> = {
-  1: '/img/laptop.png',
-  2: '/img/laptop-2.png',
-  3: '/img/laptop-3.png',
+  1: 'img/laptop.png',
+  2: 'img/laptop-2.png',
+  3: 'img/laptop-3.png',
 }
 
 function ProjectItem({
@@ -26,15 +27,15 @@ function ProjectItem({
   href,
   position = 1,
   tone = 1,
-  previewImage = '/img/example.png',
+  previewImage = 'img/example.png',
   details,
   onShowDetails,
 }: ProjectItemProps): JSX.Element {
   return (
     <article className={`project project--position-${position} project--tone-${tone}`} id={id}>
       <div className="laptop-frame">
-        <img src={laptopImages[position]} alt="Laptop" className="laptop" />
-        <div className="laptop-screen" style={{ backgroundImage: `url(${previewImage})` }} aria-hidden="true" />
+        <img src={assetPath(laptopImages[position])} alt="Laptop" className="laptop" />
+        <div className="laptop-screen" style={{ backgroundImage: `url(${assetPath(previewImage)})` }} aria-hidden="true" />
       </div>
       <div className="plate">
         <h3>{title}</h3>

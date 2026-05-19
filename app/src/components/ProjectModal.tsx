@@ -1,5 +1,6 @@
 import type { JSX } from 'react'
 import type { PortfolioProject } from '../data/portfolio'
+import { assetPath } from '../utils/assets'
 
 interface ProjectModalProps {
   project: PortfolioProject
@@ -16,7 +17,7 @@ function ProjectModal({ project, onClose }: ProjectModalProps): JSX.Element {
           ×
         </button>
 
-        <div className="project-modal-media" style={{ backgroundImage: `url(${project.previewImage ?? '/img/example.png'})` }} />
+        <div className="project-modal-media" style={{ backgroundImage: `url(${assetPath(project.previewImage ?? 'img/example.png')})` }} />
 
         <div className="project-modal-content">
           {details?.tagline ? <p className="project-modal-kicker">{details.tagline}</p> : null}

@@ -13,6 +13,8 @@ export interface PortfolioProject {
   details?: ProjectDetails
 }
 
+const productImage = (fileName: string): string => `img/products/${fileName}`
+
 export const navigationItems = [
   { label: 'Головна', href: '#', active: true },
   { label: 'Проєкти', href: '#projects' },
@@ -27,7 +29,7 @@ export const featuredProjects: PortfolioProject[] = [
     title: 'KEYWAVE',
     description: 'Редактор вебанімацій, де сцена зберігається в JSON, а SVG використовується лише для відображення.',
     href: 'https://spiriturban.github.io/kw/',
-    previewImage: '/img/products/keywave.png',
+    previewImage: productImage('keywave.png'),
     details: {
       tagline: 'Візуальна композиція часу для web.',
       overview: 'KEYWAVE — це легкий редактор motion-сцен для web. У ньому можна рухати, обертати, масштабувати й ключувати SVG-елементи, а результат зберігається як JSON-сцена, яку потім відтворює player.',
@@ -43,7 +45,7 @@ export const featuredProjects: PortfolioProject[] = [
     title: 'EXPERIENCE',
     description: 'Сайт-таймлайн про мій досвід, проєкти, технології та пропорційний рівень навичок.',
     href: 'https://spiriturban.github.io/experience/',
-    previewImage: '/img/products/experience.png',
+    previewImage: productImage('experience.png'),
     details: {
       tagline: 'Таймлайн досвіду, проєктів і технологій.',
       overview: 'EXPERIENCE — це персональний сайт, який структурує мій досвід через таймлайн, проєкти і зручну навігацію. Він допомагає швидко зрозуміти, з якими технологіями я працював, у яких проєктах вони застосовані і як між собою співвідносяться мої навички.',
@@ -59,7 +61,7 @@ export const featuredProjects: PortfolioProject[] = [
     title: 'JS BEGINNERS 2026',
     description: 'Практичний курс JavaScript з нуля до перших інтерактивних веб-проєктів.',
     href: 'https://spiriturban.github.io/javascript-beginners-2026/#/',
-    previewImage: '/img/products/js-beginners-2026.png',
+    previewImage: productImage('js-beginners-2026.png'),
     details: {
       tagline: 'JavaScript для першого впевненого старту.',
       overview: 'JS BEGINNERS 2026 — це практичний курс для новачків без досвіду програмування. Він веде від першого console.log() до DOM, подій, інтерактивних сторінок і фінального проєкту.',
@@ -77,7 +79,7 @@ export const moduleProjects: PortfolioProject[] = [
     title: 'NodeX DSL',
     description: 'JSON-first UI builder для швидкого прототипування інтерфейсів із детермінованим React/MUI export.',
     href: 'https://spiriturban.github.io/nodex-dsl/#/editor',
-    previewImage: '/img/products/nodex-dsl.png',
+    previewImage: productImage('nodex-dsl.png'),
     details: {
       tagline: 'JSON-first UI builder для devs і AI.',
       overview: 'NodeX DSL — це редактор структури інтерфейсу з єдиним DSL-контрактом. Він показує дерево, властивості вузлів і live preview, а на виході дає чистий React/MUI код без непередбачуваних полів і ручного drag-and-drop хаосу.',
@@ -92,7 +94,7 @@ export const moduleProjects: PortfolioProject[] = [
     title: 'WORK.UA PARSER',
     description: 'Локальна вебпрограма для збору, перегляду й упорядкування вакансій з Work.ua.',
     href: 'https://github.com/SpiritUrban/parser',
-    previewImage: '/img/products/parser.png',
+    previewImage: productImage('parser.png'),
     details: {
       tagline: 'Парсер вакансій із локальною базою та live-оновленням.',
       overview: 'WORK.UA PARSER — це локальний інструмент для пошуку вакансій за ключем, перевірки зарплат і роботи зі статусами. React-клієнт показує результати в браузері, Express/Socket.IO сервер парсить Work.ua, а SQLite зберігає вакансії, зарплатну історію, описи й позначки rejected або removed.',
@@ -107,7 +109,7 @@ export const moduleProjects: PortfolioProject[] = [
     title: 'CHEKNIS',
     description: 'Система м’якого самоспостереження без оцінювання, тиску й гейміфікації.',
     href: 'https://cheknis.vercel.app/',
-    previewImage: '/img/products/cheknis.png',
+    previewImage: productImage('cheknis.png'),
     details: {
       tagline: 'Швидка орієнтація у власному стані.',
       overview: 'CHEKNIS — це інструмент для короткого самочеку через чотири шкали: clarity, focus, presence і tension. Він визначає нейтральний StateId, дає мікроякір і допомагає зафіксувати стан без оцінки, поспіху або спроби втримати увагу користувача.',
