@@ -9,6 +9,7 @@ export interface PortfolioProject {
   title: string
   description: string
   href?: string
+  videoUrl?: string
   previewImage?: string
   details?: ProjectDetails
 }
@@ -61,6 +62,7 @@ export const featuredProjects: PortfolioProject[] = [
     title: 'JS BEGINNERS 2026',
     description: 'Практичний курс JavaScript з нуля до перших інтерактивних веб-проєктів.',
     href: 'https://spiriturban.github.io/javascript-beginners-2026/#/',
+    videoUrl: 'https://www.youtube.com/watch?v=GdA6I_qvqgs',
     previewImage: productImage('js-beginners-2026.png'),
     details: {
       tagline: 'JavaScript для першого впевненого старту.',

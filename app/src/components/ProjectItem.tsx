@@ -7,6 +7,7 @@ export interface ProjectItemProps {
   description: string
   id?: string
   href?: string
+  videoUrl?: string
   position?: 1 | 2 | 3
   tone?: 1 | 2 | 3 | 4 | 5 | 6
   previewImage?: string
@@ -25,6 +26,7 @@ function ProjectItem({
   description,
   id,
   href,
+  videoUrl,
   position = 1,
   tone = 1,
   previewImage = 'img/example.png',
@@ -50,6 +52,11 @@ function ProjectItem({
             <button className="project-action" type="button" onClick={onShowDetails}>
               Детальніше
             </button>
+          ) : null}
+          {videoUrl ? (
+            <a className="project-action" href={videoUrl} target="_blank" rel="noreferrer">
+              Відео
+            </a>
           ) : null}
         </div>
       </div>

@@ -37,6 +37,11 @@ function ProjectModal({ project, onClose }: ProjectModalProps): JSX.Element {
               Відкрити продукт →
             </a>
           ) : null}
+          {project.videoUrl ? (
+            <a className="project-modal-link" href={project.videoUrl} target="_blank" rel="noreferrer">
+              Відео →
+            </a>
+          ) : null}
         </div>
       </article>
     </div>
