@@ -30,6 +30,7 @@ export const featuredProjects: PortfolioProject[] = [
     title: 'KEYWAVE',
     description: 'Редактор вебанімацій, де сцена зберігається в JSON, а SVG використовується лише для відображення.',
     href: 'https://spiriturban.github.io/kw/',
+    videoUrl: 'https://www.youtube.com/watch?v=A48MZ41ofOA&t=1s',
     previewImage: productImage('keywave.png'),
     details: {
       tagline: 'Візуальна композиція часу для web.',
@@ -46,6 +47,7 @@ export const featuredProjects: PortfolioProject[] = [
     title: 'EXPERIENCE',
     description: 'Сайт-таймлайн про мій досвід, проєкти, технології та пропорційний рівень навичок.',
     href: 'https://spiriturban.github.io/experience/',
+    videoUrl: 'https://www.youtube.com/watch?v=YOyV9mBAow0',
     previewImage: productImage('experience.png'),
     details: {
       tagline: 'Таймлайн досвіду, проєктів і технологій.',
@@ -81,6 +83,7 @@ export const moduleProjects: PortfolioProject[] = [
     title: 'NodeX DSL',
     description: 'JSON-first UI builder для швидкого прототипування інтерфейсів із детермінованим React/MUI export.',
     href: 'https://spiriturban.github.io/nodex-dsl/#/editor',
+    videoUrl: 'https://www.youtube.com/watch?v=Mbny729KvDo&t=2s',
     previewImage: productImage('nodex-dsl.png'),
     details: {
       tagline: 'JSON-first UI builder для devs і AI.',
