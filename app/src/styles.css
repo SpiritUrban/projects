@@ -640,9 +640,9 @@ h1 {
   --project-gap: clamp(12px, 1.6vw, 28px);
   min-height: 520px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   gap: var(--project-gap);
   padding: 40px 0 90px;
 }
