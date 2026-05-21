@@ -112,6 +112,21 @@ export const moduleProjects: PortfolioProject[] = [
     },
   },
   {
+    id: 'project-crystal',
+    title: 'CRYSTAL SYSTEM',
+    description: 'Production booking platform для клінінгової компанії з Нью-Йорка та Нью-Джерсі з динамічним pricing engine.',
+    previewImage: productImage('crystal.png'),
+    details: {
+      tagline: 'Angular, Node.js і бізнес-логіка бронювання в production.',
+      overview: 'Crystal System Cleaning Corp — це production-платформа бронювання для клінінгової компанії, яка працювала приблизно чотири роки з реальними клієнтськими заявками та розрахунком вартості послуг. Проєкт поєднував Angular, Node.js, Angular Material і Heroku, а ключовою частиною була логіка бронювання та калькулятор ціни для residential, office і commercial service flows.',
+      points: [
+        'Розробляв frontend architecture, backend-частину, multi-step booking flow, адаптивний UI, customer lead funnel і підтримував production deployment на Heroku.',
+        'Спроєктував dynamic pricing engine, який рахував вартість клінінгу на основі конфігурованих бізнес-параметрів, комерційних правил і типу сервісу.',
+        'Платформа жила в production у 2021–2025 роках, тому включала довгострокову підтримку, багфікси, зміни бізнес-логіки, UX-покращення та адаптацію під реальні операційні потреби клієнта.',
+      ],
+    },
+  },
+  {
     title: 'WORK.UA PARSER',
     description: 'Локальна вебпрограма для збору, перегляду й упорядкування вакансій з Work.ua.',
     href: 'https://github.com/SpiritUrban/parser',
