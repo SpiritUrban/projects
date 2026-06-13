@@ -19,9 +19,9 @@ const productImage = (fileName: string): string => `img/products/${fileName}`
 export const navigationItems = [
   { label: 'Головна', href: '#', active: true },
   { label: 'Проєкти', href: '#projects' },
-  { label: 'Про мене', href: '#about' },
-  { label: 'Статті', href: '#articles' },
-  { label: 'Контакти', href: '#contacts' },
+  { label: 'Про мене', href: 'https://spiriturban.github.io/' },
+  // { label: 'Статті', href: '#articles' },
+  { label: 'Контакти', href: 'https://spiriturban.github.io/#mentoring' },
 ]
 
 export const featuredProjects: PortfolioProject[] = [
