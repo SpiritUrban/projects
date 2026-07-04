@@ -47,7 +47,7 @@ export const featuredProjects: PortfolioProject[] = [
     id: 'project-kitykat-physioquest',
     title: 'KITYKAT PHYSIOQUEST',
     description: 'Mobile-first PWA для вивчення професійної німецької мови фізіотерапевтами через інтерактивні уроки, картки, клінічні фрази, тести та озвучення.',
-    href: 'https://spiriturban.github.io/KityKat-PhysioQuest/',
+    href: 'https://kity-kat-physio-quest.vercel.app',
     previewImage: productImage('kitykat-physioquest.png'),
     details: {
       tagline: 'Професійна німецька для фізіотерапевтів у форматі навчальної гри.',
