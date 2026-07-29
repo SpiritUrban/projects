@@ -63,6 +63,25 @@ export const featuredProjects: PortfolioProject[] = [
     },
   },
   {
+    id: 'project-git-manager',
+    title: 'GIT MANAGER',
+    description: 'Кросплатформна desktop-програма для пошуку локальних Git-репозиторіїв, організації їх у групи та швидкого запуску в редакторі або терміналі.',
+    href: 'https://spiriturban.github.io/git-manager/#download',
+    previewImage: productImage('git-manager.png'),
+    details: {
+      tagline: 'Усі локальні Git-проєкти в одному місці.',
+      overview: 'Git Manager — це безкоштовна open-source desktop-програма для Windows, macOS і Linux, яка автоматично знаходить локальні Git-репозиторії та збирає їх у зручному візуальному просторі. Проєкти можна впорядковувати у кольорові групи, позначати тегами й обраним, перетягувати у потрібному порядку та одним кліком відкривати в IDE, терміналі, файловому менеджері, браузері або на сторінці віддаленого репозиторію.',
+      points: [
+        'Реалізував багатопотокове фонове сканування вибраних директорій для швидкого пошуку й індексації локальних Git-репозиторіїв.',
+        'Створив систему кольорових груп, тегів, обраних і drag-and-drop сортування зі збереженням структури та налаштувань у локальній SQLite-базі.',
+        'Додав запуск проєктів у VS Code, VS Code Insiders, Cursor або власній IDE, а також підтримку популярних терміналів Windows, macOS і Linux.',
+        'Забезпечив швидкий перехід до папки проєкту, опублікованого сайту чи нормалізованого GitHub, GitLab або Bitbucket URL.',
+        'Побудував кросплатформні релізи для Windows x64, macOS Intel і Apple Silicon та Linux x64, а також автоматичні перевірки оновлень через Tauri Updater.',
+        'Зберіг privacy-first підхід: програма не використовує телеметрію, а шляхи, дані репозиторіїв і налаштування залишаються тільки на пристрої користувача.',
+      ],
+    },
+  },
+  {
     id: 'project-atomcode',
     title: 'ATOMCODE',
     description: 'Освітня платформа для вивчення програмування через атомарні уроки, інтерактивні матеріали та практичні проєкти.',
@@ -134,6 +153,7 @@ export const featuredProjects: PortfolioProject[] = [
 ]
 
 export const moduleProjects: PortfolioProject[] = [
+
   {
     title: 'NodeX DSL',
     description: 'JSON-first UI builder для швидкого прототипування інтерфейсів із детермінованим React/MUI export.',
