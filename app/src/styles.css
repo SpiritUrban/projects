@@ -6,8 +6,8 @@
   --font-body: 'Manrope', 'Segoe UI', sans-serif;
   --bg: #050607;
   --bg-2: #0b0d0f;
-  --text: #e8e1d5;
-  --muted: #8f8981;
+  --text: #f4efe6;
+  --muted: #a9a39a;
   --gold: #d99a3d;
   --gold-soft: rgba(217, 154, 61, 0.22);
   --cyan: #4fb7c7;
@@ -77,6 +77,10 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: .62;
+  filter: blur(7px);
+  /* scale прибирає засвітлені краї, які дає blur на fixed-елементі */
+  transform: scale(1.06);
 }
 
 .bg-image-placeholder::before {
@@ -147,7 +151,7 @@ a {
 .lang {
   font-size: 14px;
   letter-spacing: .16em;
-  color: rgba(232, 225, 213, .55);
+  color: rgba(232, 225, 213, .72);
   text-transform: uppercase;
   transition: .25s ease;
 }
@@ -222,7 +226,7 @@ h1 {
 }
 
 .subtitle {
-  color: rgba(232, 225, 213, .58);
+  color: rgba(232, 225, 213, .75);
   text-transform: uppercase;
   letter-spacing: .13em;
   font-size: 16px;
@@ -231,7 +235,7 @@ h1 {
 
 .lead {
   max-width: 430px;
-  color: rgba(232, 225, 213, .55);
+  color: rgba(232, 225, 213, .72);
   line-height: 1.75;
   font-size: 17px;
   margin-bottom: 38px;
@@ -264,7 +268,7 @@ h1 {
   border: 1px solid rgba(255, 255, 255, .12);
   box-shadow: 0 20px 50px rgba(0, 0, 0, .38);
   backdrop-filter: blur(14px);
-  color: rgba(232, 225, 213, .58);
+  color: rgba(232, 225, 213, .75);
   line-height: 1.6;
   font-size: 14px;
   z-index: 5;
@@ -311,7 +315,7 @@ h1 {
   border: 1px solid var(--border);
   box-shadow: 0 18px 34px rgba(0, 0, 0, .44);
   backdrop-filter: blur(14px);
-  color: rgba(232, 225, 213, .88);
+  color: rgba(232, 225, 213, .95);
 }
 
 .info-card .info-tag {
@@ -339,7 +343,7 @@ h1 {
 
 .info-card p {
   margin: 0;
-  color: rgba(232, 225, 213, .7);
+  color: rgba(232, 225, 213, .82);
   font-size: 14px;
   line-height: 1.6;
 }
@@ -483,7 +487,7 @@ h1 {
 }
 
 .plate p {
-  color: rgba(232, 225, 213, .55);
+  color: rgba(232, 225, 213, .72);
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 14px;
@@ -604,7 +608,7 @@ h1 {
 
 .project-modal p,
 .project-modal li {
-  color: rgba(232, 225, 213, .72);
+  color: rgba(232, 225, 213, .84);
   line-height: 1.7;
   font-size: 15px;
 }
@@ -630,7 +634,7 @@ h1 {
   position: absolute;
   left: 56px;
   bottom: 36px;
-  color: rgba(232, 225, 213, .55);
+  color: rgba(232, 225, 213, .72);
   font-size: 13px;
   letter-spacing: .16em;
   text-transform: uppercase;
@@ -662,7 +666,7 @@ h1 {
 
 .section-head p {
   max-width: 420px;
-  color: rgba(232, 225, 213, .5);
+  color: rgba(232, 225, 213, .68);
   line-height: 1.7;
   font-size: 16px;
 }
@@ -707,7 +711,7 @@ h1 {
   border: 1px solid var(--border);
   box-shadow: 0 18px 34px rgba(0, 0, 0, .44);
   backdrop-filter: blur(14px);
-  color: rgba(232, 225, 213, .88);
+  color: rgba(232, 225, 213, .95);
 }
 
 .project-row .project:hover {
@@ -720,7 +724,7 @@ h1 {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  color: rgba(232, 225, 213, .42);
+  color: rgba(232, 225, 213, .58);
   text-transform: uppercase;
   letter-spacing: .16em;
   font-size: 13px;
