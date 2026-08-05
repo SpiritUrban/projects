@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700&display=swap');
 
 :root {
+  --font-display: 'Science Gothic', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-body: 'Manrope', 'Segoe UI', sans-serif;
   --bg: #050607;
   --bg-2: #0b0d0f;
   --text: #e8e1d5;
@@ -29,8 +32,28 @@ body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--text);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-body);
+  font-weight: 300;
+  letter-spacing: .005em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* Технічні мікролейбли лишаються моноширинними, як і заголовки. */
+.logo,
+.menu a,
+.lang,
+.eyebrow,
+.cta,
+.info-card .info-tag,
+.project-action,
+.project-modal-kicker,
+.project-modal-link,
+.scroll-indicator,
+.footer {
+  font-family: var(--font-mono);
+  font-weight: 400;
 }
 
 a {
@@ -188,7 +211,7 @@ a {
 }
 
 h1 {
-  font-family: 'Science Gothic', sans-serif;
+  font-family: var(--font-display);
   font-size: clamp(58px, 7vw, 108px);
   line-height: .87;
   text-transform: uppercase;
@@ -305,7 +328,7 @@ h1 {
 }
 
 .info-card h3 {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 18px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -451,7 +474,7 @@ h1 {
 }
 
 .plate h3 {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 18px;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -481,7 +504,7 @@ h1 {
   color: var(--gold);
   text-transform: uppercase;
   letter-spacing: .14em;
-  font-family: inherit;
+  font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
@@ -572,6 +595,7 @@ h1 {
 }
 
 .project-modal h2 {
+  font-family: var(--font-mono);
   margin-bottom: 18px;
   font-size: clamp(32px, 4vw, 56px);
   line-height: .95;
@@ -628,7 +652,7 @@ h1 {
 }
 
 .section-head h2 {
-  font-family: 'Science Gothic', sans-serif;
+  font-family: var(--font-display);
   font-size: clamp(36px, 4vw, 72px);
   line-height: .95;
   text-transform: uppercase;
