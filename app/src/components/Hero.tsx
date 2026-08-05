@@ -4,7 +4,7 @@ function Hero(): JSX.Element {
   return (
     <main className="hero">
       <section className="intro">
-        <div className="eyebrow"><span className="glyph" /> Digital creator</div>
+        <div className="eyebrow"> Digital creator</div>
         <h1>Віталій<br />Дячук</h1>
         <div className="subtitle">Розробка. Дизайн. Системи.</div>
         <p className="lead">Я створюю цифрові продукти, що поєднують технології, естетику, практичність і живу архітектуру мислення.</p>
